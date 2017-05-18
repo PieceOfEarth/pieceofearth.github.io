@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="tags">
+  <p>
+    {% for tag in page.tags %}
+      <a href="#" title="">{{ tag }}</a>
+    {% endfor %}
+  </p>
+</div>
+
+<div class="metadata">
+  <p class="authors">Written by <span class="author">{{ page.authors | array_to_sentence_string }}</span> on <span class="date">{{ page.date | date: "%-d %B %Y" }}</span>.</p>
+</div>
+
+{{ page.content }}

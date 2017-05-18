@@ -1,0 +1,173 @@
+html {
+  font-family: 'Khula', sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
+
+/* Page header */
+
+header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 4% 10% 2% 10%;
+  background-color: #008FB2;
+}
+
+.main-title {
+  font-size: 3em;
+  color: white;
+  border-bottom: 2px solid #FF7A00;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.main-title a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.main-title a:hover {
+  color: #FF7A00;
+  text-decoration: none;
+}
+
+/* TODO: media queries to drop nav onto new line */
+
+.main-nav a {
+  font-size: 1.3em;
+  line-height: 2em;
+  text-decoration: none;
+  transition: all 0.2s;
+  color: white;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid #FF7A00;
+  color: #FF7A00;
+}
+
+.main-nav a:active,
+.main-title a:active {
+  color: #FF7A00;
+}
+
+.main-nav ul {
+  padding: 0;
+  display: inline;
+}
+
+.main-nav li {
+  list-style-type: none;
+  display: inline;
+}
+
+.main-nav li:nth-of-type(n+1) {
+  margin-left: 1em;
+}
+
+/* TODO: make space for drawer as it slides out */
+
+.drawer {
+  display: inline-block;
+  width: 80%;
+  padding: 0 10% 0 10%;
+  background-color: #00CCFF;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  transform-origin: top;
+}
+
+.drawer-open {
+  transform: scaleY(1);
+}
+
+.drawer-closed {
+  transform: scaleY(0);
+}
+
+/* Page content */
+
+.container {
+  padding: 0.5em 10% 0.5em 10%;
+}
+
+.page-title {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styles for the page content */
+
+.content h1 {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.content h2 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.content h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content p, .content li {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content a {
+  color: #008FB2;
+}
+
+.content a:hover,
+.content a:active {
+  color: #FF7A00;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 97%;
+  margin: 0;
+  padding: 1.5%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+blockquote::before {
+  font-size: 3em;
+  padding-right: 1%;
+  font-family: "Inconsolata", sans-serif;
+  opacity: 0.40;
+  content: "“";
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Page footer */
+
+footer {
+  padding: 0.5em 10% 0.5em 10%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-text {
+  width: 100%;
+  border-top: 2px solid #008FB2;
+}
+
+.footer-text a {
+  color: #008FB2;
+}
+
+.footer-text a:hover,
+.footer-text a:active {
+  color: #FF7A00;
+}
