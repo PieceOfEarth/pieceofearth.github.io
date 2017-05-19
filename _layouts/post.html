@@ -2,16 +2,36 @@
 layout: default
 ---
 
-<div class="tags">
-  <p>
-    {% for tag in page.tags %}
-      <a href="#" title="">{{ tag }}</a>
-    {% endfor %}
-  </p>
-</div>
-
 <div class="metadata">
-  <p class="authors">Written by <span class="author">{{ page.authors | array_to_sentence_string }}</span> on <span class="date">{{ page.date | date: "%-d %B %Y" }}</span>.</p>
+  <p class="authors">
+    Written by
+    <span class="author">
+      {% for author in page.authors %}
+        <a href="#" title="View posts by {{ author | capitalize }}">{{author | capitalize}}</a>{% if forloop.rindex == 2 %} and{% elsif forloop.rindex > 2 %},{% endif %}
+      {% endfor %}
+    </span>
+    on
+    <span class="date">{{ page.date | date: "%-d %B %Y" }}</span>.</p>
 </div>
 
 {{ page.content }}
+
+{% if page.tags and page.tags.size != 0 and page.tags != nil %}
+  <div class="tags">
+    <p>Tagged with&nbsp;</p>
+    <ul>
+      {% for tag in page.tags %}
+        <li><a href="#" title="View posts tagged with {{ tag | capitalize }}">{{ tag | capitalize }}</a></li>{% if forloop.rindex == 2 %} and{% elsif forloop.rindex == 1 %}.{% elsif forloop.rindex > 2 %},{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+<div class="post-nav">
+  <div class="post-nav-next">
+    <a href="#" title="View the next blog post">← Next post</a>
+  </div>
+  <div class="post-nav-prev">
+    <a href="#" title="View the previous blog post">Previous post →</a>
+  </div>
+</div>
