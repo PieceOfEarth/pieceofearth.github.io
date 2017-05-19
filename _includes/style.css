@@ -143,6 +143,10 @@ header {
   font-style: italic;
 }
 
+.content .metadata .author {
+  font-style: normal;
+}
+
 .content .tags {
   display: flex;
   flex: 1;
@@ -168,12 +172,21 @@ header {
   display: inline;
 }
 
+.content .tags .tag {
+  margin-right: 0.5em;
+}
+
 .content .post-nav {
   margin-top: 0.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.content .post-nav p {
+  margin: 0;
+  font-style: italic;
 }
 
 blockquote {

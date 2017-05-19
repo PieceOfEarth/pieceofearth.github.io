@@ -1,4 +1,5 @@
 title: "Commune is Real"
+description: "A community project driven by sustainable practises and a conscious lifestyle. Our motivates include awareness of climate change, increasing a connection with our food and shelter and living a minimal, sustainable life."
 lsi: false
 safe: true
 incremental: false
@@ -12,3 +13,6 @@ kramdown:
 gems:
  - jekyll-coffeescript
  - jekyll-paginate
+ - jekyll-seo-tag
+ - jekyll-sitemap
+permalink: pretty

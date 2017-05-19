@@ -21,7 +21,7 @@ layout: default
     <p>Tagged with&nbsp;</p>
     <ul>
       {% for tag in page.tags %}
-        <li><a href="#" title="View posts tagged with {{ tag | capitalize }}">{{ tag | capitalize }}</a></li>{% if forloop.rindex == 2 %} and{% elsif forloop.rindex == 1 %}.{% elsif forloop.rindex > 2 %},{% endif %}
+        <li><a href="/tags#{{ tag }}" title="View posts tagged with {{ tag }}">{{ tag }}</a></li>{% if forloop.rindex == 2 %} and{% elsif forloop.rindex == 1 %}.{% elsif forloop.rindex > 2 %},{% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -29,9 +29,17 @@ layout: default
 
 <div class="post-nav">
   <div class="post-nav-next">
-    <a href="#" title="View the next blog post">← Next post</a>
+    {% if page.next == nil %}
+      <a href="/" title="Go to the Homepage">Back to the Homepage</a>
+    {% else %}
+      <a href="{{ page.next.url }}" title="View the next blog post">← Next post</a>
+    {% endif %}
   </div>
   <div class="post-nav-prev">
-    <a href="#" title="View the previous blog post">Previous post →</a>
+    {% if page.previous == nil %}
+      <p>You've read everything!</p>
+    {% else %}
+      <a href="{{ page.previous.url }}" title="View the previous blog post">Previous post →</a>
+    {% endif %}
   </div>
 </div>

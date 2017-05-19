@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{% if page.title != nil %}{{ page.title | append: ' - '}}{% endif %}Commune is Real</title>
+    <title>{% if page.title != nil %}{{ page.title | append: ' - '}}{% endif %}{{site.title}}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata:400" media="all">
     <style type="text/css">{% include style.css %}</style>
     <script type="text/javascript">{% include drawer.js %}</script>
+    {% seo %}
   </head>
   <body>
     <header>
       <h1 class="main-title">
-        <a href="/" title="Go to the homepage">Commune is Real</a>
+        <a href="/" title="Go to the homepage">{{site.title}}</a>
       </h1>
       <nav class="main-nav">
         <ul>
           <li><a href="/" title="Go to the homepage">Home</a></li>
           {% for item in site.pages %}
-            {% if item.title != "Home" and item.title != nil %}
+            {% if item.nav != false and item.title != nil %}
               <li><a href="{{item.url}}" title="Go to the {{item.title}}">{{item.title}}</a></li>
             {% endif %}
           {% endfor %}
@@ -38,7 +39,7 @@
     </div>
     <footer>
       <div class="footer-text">
-        <p>The Commune is Real &bull; 2017 &bull; Licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/" title="All content licensed under Creative Commons Attribution-ShareAlike 2.0">CC BY-SA 2.0</a></p>
+        <p>{{site.title}} &bull; 2017 &bull; Licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/" title="All content licensed under Creative Commons Attribution-ShareAlike 2.0">CC BY-SA 2.0</a></p>
       </div>
     </footer>
   </body>

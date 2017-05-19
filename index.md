@@ -2,6 +2,7 @@
 layout: default
 permalink: /
 title: Home
+nav: false
 ---
 
 This is the online home of the Commune is Real project.
