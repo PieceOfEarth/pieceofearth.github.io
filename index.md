@@ -5,7 +5,7 @@ title: Home
 nav: false
 ---
 
-This is the online home of the Commune is Real project.
+This is the online home of the Commune is Real: a community project driven by sustainable practices and a conscious lifestyle. Our motives include awareness of climate change, increasing a connection with our food and shelter and living a minimal, sustainable life.
 
 > "Everyone thinks of changing the world, but no one thinks of changing themself." — Leo Tolstoy.
 

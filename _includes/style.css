@@ -107,6 +107,29 @@ header {
 
 /* Styles for the page content */
 
+.content {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.content .img-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.content .img-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+
+.content img {
+  max-height: 30em;
+  max-width: 100%;
+  height: auto;
+}
+
 .content h1 {
   color: rgba(0, 0, 0, 0.8);
 }
