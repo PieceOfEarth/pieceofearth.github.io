@@ -16,3 +16,8 @@ gems:
  - jekyll-seo-tag
  - jekyll-sitemap
 permalink: pretty
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true

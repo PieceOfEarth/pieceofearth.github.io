@@ -124,10 +124,35 @@ header {
   font-style: italic;
 }
 
-.content img {
+.content .img-container img {
   max-height: 30em;
   max-width: 100%;
   height: auto;
+}
+
+.content .img-thumb {
+  display: inline-block;
+  position: relative;
+  width: 8em;
+  height: 8em;
+  overflow: hidden;
+  border: 2px solid #008FB2;
+  transition: all 0.2s;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.content .img-thumb:hover {
+  border: 2px solid #FF7A00;
+}
+
+.content .img-thumb img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .content h1 {

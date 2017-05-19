@@ -12,8 +12,8 @@ The first meet up was held in the Gower Peninsula in Wales, at a community calle
 During the stay we visited a local community, Holtsfield, and talked at length with one of the residents there. We then spent the evening eating and drinking around a campfire, taking it in turns to voice our motivations for joining the project and put forward our projected, personal timeframes before beginning.
 
 <div class="img-container">
-  <a href="{{ site.url }}/assets/sandy-lane/group.jpg">
-    <img src="{{ site.url }}/assets/sandy-lane/group.jpg" title="The group overlooking the Three Cliffs Beach" />
+  <a href="{{ site.url }}/assets/images/sandy-lane.jpg">
+    <img src="{{ site.url }}/assets/images/sandy-lane.jpg" title="The group overlooking the Three Cliffs Beach" />
   </a>
   <div class="img-description">The group overlooking the Three Cliffs Beach</div>
 </div>
