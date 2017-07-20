@@ -22,7 +22,7 @@ header {
   header {
     flex-direction: column;
   }
-  
+
   .main-nav {
     margin-top: 2%;
   }
@@ -31,6 +31,31 @@ header {
 @media screen and (max-width: 400px) {
   .main-nav li {
     font-size: 0.8em;
+  }
+}
+
+.flickr {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.flickr img {
+  width: 425px;
+  height: 640px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flickr img {
+    width: 332px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .flickr img {
+    width: 213px;
+    height: 320px;
   }
 }
 
