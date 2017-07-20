@@ -28,6 +28,12 @@ header {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .main-nav li {
+    font-size: 0.8em;
+  }
+}
+
 .main-title {
   font-size: 3em;
   color: white;
