@@ -18,12 +18,23 @@ header {
   background-color: #008FB2;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  
+  .main-nav {
+    margin-top: 2%;
+  }
+}
+
 .main-title {
   font-size: 3em;
   color: white;
   border-bottom: 2px solid #FF7A00;
   letter-spacing: 0.2px;
   margin: 0;
+  text-align: center;
 }
 
 .main-title a {
@@ -36,8 +47,6 @@ header {
   color: #FF7A00;
   text-decoration: none;
 }
-
-/* TODO: media queries to drop nav onto new line */
 
 .main-nav a {
   font-size: 1.3em;
