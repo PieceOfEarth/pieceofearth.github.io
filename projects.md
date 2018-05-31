@@ -4,4 +4,4 @@ permalink: 'projects/'
 title: 'Projects'
 ---
 
-Sorry, I've yet to be built.
+You can find documentation about some of the projects we have researched on our wiki, which you can find [here] (piece-of-earth.wikia.com)
